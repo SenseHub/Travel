@@ -1,0 +1,374 @@
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+}
+
+                    /* header */
+
+.Title {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.Title h1 {
+    margin-bottom: 10px;
+}
+
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #333;
+}
+
+.menu li {
+    margin-left: 10%;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+                    /* top-content */
+
+.top-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    width: 80%;
+}
+
+.top-picture figure {
+    margin: 15px 15px 0 0;
+}
+
+article:last-child .top-figure {
+    margin: 15px 0 0 0;
+}
+
+.top-picture img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.top-picture figcaption {
+    margin-bottom: 10px;
+}
+
+.top-content a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: skyblue;
+}
+
+
+                    /* container */
+.container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+
+                    /* main-content */
+.main-content img {
+    width: 100%;
+    margin: 0 40px 20px 0;
+}
+
+.main-content figure {
+    margin: 0 40px 20px 0;
+}
+
+.main-content h2 {
+    margin: 0;
+}
+
+.main-content p {
+    margin: 10px 0 5px 0;
+}
+
+.main-content a {
+    display: block;
+    text-align: center;
+    margin: 40px 0 60px 0;
+    text-decoration: none;
+}
+
+
+                    /* side-content */
+#side-content {
+    flex: 2;
+}
+
+.human {
+    text-align: center;
+}
+
+.human img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.introduce p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.Ranking h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 60px 0 0px 0;
+}
+
+.Ranking figure {
+    text-align: center;
+    margin: 0;
+}
+
+.Ranking figcaption {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.archive {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.archive_list li {
+    list-style: none;
+    border-top: 1px solid gray;
+    margin: 0;
+    align-items: center;
+}
+
+.archive_list a {
+    display: block;
+    text-decoration: none;
+    margin: 0;
+    padding: 15px 0 15px 15px;
+}
+
+.archive_list:-of-type {
+    border-bottom: 1px solid gray;
+}
+
+                    /* footer */
+.info {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.About {
+    flex: 1;
+    width: 80%;
+    margin-right: 40px;
+    justify-content: center;
+    list-style: none;
+}
+
+.About li {
+    margin: 15px 0;
+    padding-left: 1em;
+}
+
+.About li::before {
+    content: "";
+    display: inline-block;
+    margin: 0;
+    width:0px;
+    height:0px;
+    border-top: solid 6px transparent;
+    border-right: solid 6px transparent;
+    border-bottom: solid 6px transparent;
+    border-left: solid 6px #000;
+}
+
+.About a {
+    text-decoration: none;
+}
+
+#Menu {
+    flex: 1;
+    list-style: none;
+    margin-right: 40px;
+    padding-left: 20px;
+    height: 100vh;
+}
+
+#Menu a {
+    display: block;
+    padding: 15px 0 15px 15px;
+    text-decoration: none;
+}
+
+#Menu li {
+    border-top: 1px solid gray;
+}
+
+#Menu li:last-child {
+    border-bottom: 1px solid gray;
+}
+
+.Twitter {
+    flex: 1;
+}
+
+.copy {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+
+.ham_menu1 {
+    transform: translate(-50px, 0);
+    transition-duration: 1.15s;
+}
+
+.ham_menu {
+    transform: translate(-150px, 0);
+    transition-duration: 1s;
+}
+
+.back_ground {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: #000;
+    opacity: 0.8;
+    transition: all .6s;
+    cursor: pointer;
+    /* visibility: hidden; */
+}
+
+/* @media */
+@media (min-width: 100px) and (max-width: 767px) {
+    Title {
+        position: relative;
+    }
+    .Title h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    #ham {
+        position: absolute;
+        top: 15px;
+        left: 80%;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition-duration: 1.15s;
+    } 
+    .line {
+        position: absolute;
+        left: 10px;
+        width: 20px;
+        border: solid 1px #000;
+        border-radius: 5px;
+    }
+    .ham1 {
+        top: 10px;
+    }
+    .ham2 {
+        top: 18px;
+    }
+    .ham3 {
+        top: 26px;
+    }
+    #menu_list {
+        display: none;
+    }
+    .top-content {
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .top-picture img {
+        width: 80%;
+        margin: 0 auto;
+        height: auto;
+    }
+    .top-picture figure {
+        margin: 0 auto;
+    }
+    .container {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .container figure {
+        margin: 0 auto;
+    }
+    .main-figure {
+        margin: 0;
+    }
+    .info {
+        flex-direction: column;
+    }
+    .Ranking img {
+        width: 100%;
+    }
+    #Menu {
+        position: fixed;
+        top: 0;
+        right: -150px;
+        margin: 0;
+        color: #fff;
+        padding-right: 20px;
+        background-color: #333;
+        transition-duration: 1s;
+        z-index: 101;
+    }
+    #Menu a {
+        color: #fff;
+    }
+    #Menu a:hover {
+        color: aqua;
+    }
+    .copy {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+    }
+    .container figure {
+        margin: 0 auto;
+    }
+    .Ranking img {
+        width: 100%;
+    }
+    .info {
+        flex-direction: column;
+    }
+    .copy {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
